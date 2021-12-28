@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font: 400 15px;
+    line-height: 1.8;
+    color: #333333;
+    background-color: #FFFCEC;
+}
+
+h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #FFFCEC;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+    color: #333333;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    color: #FFFCEC;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 1.375em;
+    color: #333333;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#start {
+    padding: auto;
+    background: rgb(255,252,236);
+    background: linear-gradient(0deg, rgba(255,252,236,1) 0%, rgba(235,89,60,1) 65%);
+    background-size: 100% 100%;
+}
+
+#ref {
+    background-color: #333333;
+}
+
+.earth-img {
+    position: fixed;
+    height: 100%;
+    object-fit: cover;
+    /*              object-position: right;*/
+    opacity: 1;
+}
+
+.transit-effect1 {
+    transition: bottom 1s;
+}
+
+#box {
+    font-family: 'Merriweather', serif;
+    padding: 10%;
+    margin: 10%;
+    background-color: hsla(0, 0%, 20%, 0.4);
+    border-radius: 50px;
+}
