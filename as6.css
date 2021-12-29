@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-
+@import 'animate.css';
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -13,7 +13,7 @@ h1 {
     font-size: 24px;
     text-transform: uppercase;
     color: #FFFCEC;
-    font-weight: 600;
+    font-weight: 900;
     margin-bottom: 30px;
 }
 
@@ -49,14 +49,31 @@ h4 {
     margin-left: auto;
 }
 
+.jumbotron {
+    background-image: url(https://lh3.googleusercontent.com/9VzlEF2ELJqTPzLBcyuyDuECUK9AyQ-oSV4QqK2wwWFnJjKOt4ixNCcVh-xDUFkyZAFLFw5ryyJsRE-uhcH6nYxOijLPzHty8k0Wb33cPoXBBzbw0zAI0O92uVRm1wONgBFdfRR4fg=w2400);
+    color: white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: -15% 15%;
+    margin-bottom: 0px;
+    padding: 200px 100px;
+    font-family:  'Merriweather', serif;
+    font-weight: 800;
+    text-shadow: #333333 0.5em 0.5em 0.5em;
+  }
+
 #start {
     padding: auto;
-    background: rgb(255,252,236);
-    background: linear-gradient(0deg, rgba(255,252,236,1) 0%, rgba(235,89,60,1) 65%);
+    background: rgb(255, 252, 236);
+    background: linear-gradient(0deg, rgba(255, 252, 236, 1) 0%, rgba(235, 89, 60, 1) 65%);
     background-size: 100% 100%;
 }
 
 #ref {
+    background-color: #FFFCEC;
+}
+
+#footer {
     background-color: #333333;
 }
 
@@ -78,4 +95,11 @@ h4 {
     margin: 10%;
     background-color: hsla(0, 0%, 20%, 0.4);
     border-radius: 50px;
+}
+
+#img1 {
+    position: absolute;
+    width: 30%;
+    top: 20%;
+    left: 50%;
 }

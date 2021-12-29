@@ -1,16 +1,24 @@
 //comic player
-$(function () {
+$(document).ready(function() {
+    var div1_pos = $("#div1").offset().top;
+    var space1_pos = $("#space1").offset().top;
     var winh = $(window).height();
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         var scrolled = $(window).scrollTop();
-        $(".slideanimate").each(function () {
-            if (scrolled > $(this).data("pos")) {
-                $(this).addClass("animate__animated slide animate__" + $(this).data("direction"));
-            }
-            if (scrolled == 0) {
-                $(this).removeClass("animate__animate slide animate__" + $(this).data("direction"));
-            }
-        });
+        var div1_scrolled = scrolled - div1_pos;
+        if (div1_scrolled > 0 && scrolled < space1_pos - winh) {
+            $("#naruto1").css('left', ($("#naruto1").data('left') + div1_scrolled * 0.01) + '%');
+            $("#sasuke1").css('left', ($("#sasuke1").data('left') - div1_scrolled * 0.01) + '%');
+            $("#naruto1").css('top', ($("#naruto1").data('top') + div1_scrolled * 0.055) + '%');
+            $("#sasuke1").css('top', ($("#sasuke1").data('top') + div1_scrolled * 0.06) + '%');
+
+            $("#naruto1").css('width', ($("#naruto1").data('width') + div1_scrolled * 0.01) + '%');
+            $("#sasuke1").css('width', ($("#sasuke1").data('width') + div1_scrolled * 0.01) + '%');
+
+            console.log("div1_pos:" + div1_pos +
+                "\tscrolled:" + scrolled +
+                "\tspace1:" + space1_pos);
+        }
     });
 });
 
